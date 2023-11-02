@@ -77,6 +77,12 @@ When the client makes a `GET` request to `/api/users`:
   - respond with HTTP status code `500`.
   - return the following JSON object: `{ message: "The users information could not be retrieved" }`.
 
+
+
+
+
+
+
 When the client makes a `GET` request to `/api/users/:id`:
 
 - If the _user_ with the specified `id` is not found:
@@ -87,6 +93,13 @@ When the client makes a `GET` request to `/api/users/:id`:
 - If there's an error in retrieving the _user_ from the database:
   - respond with HTTP status code `500`.
   - return the following JSON object: `{ message: "The user information could not be retrieved" }`.
+
+
+
+
+
+
+  
 
 When the client makes a `DELETE` request to `/api/users/:id`:
 
