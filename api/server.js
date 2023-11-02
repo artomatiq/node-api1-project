@@ -64,12 +64,12 @@ server.delete(`/api/users/:id`, (req, res) => {
                 res.status(404).json({message: 'The user with the specified ID does not exist'})
             }
             else {
-                res.status(204).json(user)
+                res.json(user)
             }
         })
-        .catch (
+        .catch (err => {
             res.status(500).json({message: 'The user could not be removed'})
-        )
+        })
 })
 
 
