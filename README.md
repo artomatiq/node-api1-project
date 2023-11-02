@@ -117,7 +117,7 @@ When the client makes a `DELETE` request to `/api/users/:id`:
 
 
 
-  
+
 
 When the client makes a `PUT` request to `/api/users/:id`:
 
@@ -141,6 +141,11 @@ When the client makes a `PUT` request to `/api/users/:id`:
   - update the user document in the database using the new information sent in the `request body`.
   - respond with HTTP status code `200` (OK).
   - return the newly updated _user document_.
+
+
+
+
+  
 
 #### Important Notes
 
